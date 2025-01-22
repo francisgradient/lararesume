@@ -1,21 +1,13 @@
-@extends("components.layout")
+@extends('layouts.front')
+
+@section('title',$data['title'])
 
 @section('content')
 
 
 <div class="page new-skin">
 
-    <!-- preloader -->
-    <div class="preloader">
-        <div class="centrize full-width">
-            <div class="vertical-center">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('components.front.preloader')
 
     <!-- background -->
     <div class="background gradient">
@@ -36,7 +28,7 @@
     <!--
         Container
     -->
-    <div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+    <div class="container opened" data-animation-in="fadeInLeft", data-animation-out="fadeOutLeft">
 
         <!--
             Header
@@ -50,7 +42,7 @@
                         <img src="assets/images/profile.png" alt="Ryan Adlard">
                     </a>
                 </div>
-                <div class="title">Ryan Adlard</div>
+                <div class="title">{{$data['name']}}</div>
                 <div class="subtitle subtitle-typed">
                     <div class="typing-title">
                         <p>Web Designer</p>
@@ -120,7 +112,7 @@
                 </div>
 
                 <!-- profile titles -->
-                <div class="title">Ryan Adlard</div>
+                <div class="title">{{$data['name']}}</div>
                 <!--<div class="subtitle">Web Designer</div>-->
                 <div class="subtitle subtitle-typed">
                     <div class="typing-title">
@@ -204,74 +196,30 @@
 
                     <!-- content -->
                     <div class="row service-items border-line-v">
+
+                        @foreach ($services as $service)
+
                         <!-- service item -->
                         <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
                             <div class="service-item">
                                 <div class="icon">
-                                    <span class="fa fa-code"></span>
+                                    <span class="{{$service->service_icon}}"></span>
                                 </div>
                                 <div class="name">
                                     <span >
-                                    Web Development								</span>
+                                        {{$service->service_title}}
+                                    </span>
                                 </div>
                                 <div class="desc">
                                     <div >
-                                        <p>Modern and mobile-ready website that will help you reach all of your marketing.</p>
+                                        <p>{{$service->service_description}}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- service item -->
-                        <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-                            <div class="service-item">
-                                <div class="icon">
-                                    <span class="fa fa-music"></span>
-                                </div>
-                                <div class="name">
-                                    <span >
-                                    Music Writing								</span>
-                                </div>
-                                <div class="desc">
-                                    <div >
-                                        <p>Music copying, writing, creating, transcription, arranging and composition services.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- service item -->
-                        <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-                            <div class="service-item">
-                                <div class="icon">
-                                    <span class="fa fa-buysellads"></span>
-                                </div>
-                                <div class="name">
-                                    <span >
-                                    Advetising								</span>
-                                </div>
-                                <div class="desc">
-                                    <div >
-                                        <p>Advertising services include television, radio, print, mail, and web apps.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- service item -->
-                        <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-                            <div class="service-item">
-                                <div class="icon">
-                                    <span class="fa fa-gamepad"></span>
-                                </div>
-                                <div class="name">
-                                    <span >
-                                    Game Development								</span>
-                                </div>
-                                <div class="desc">
-                                    <div >
-                                        <p>Developing memorable and unique mobile android, ios and video games.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                        @endforeach
+
                     </div>
                     <div class="clear"></div>
 
