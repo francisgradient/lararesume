@@ -20,7 +20,7 @@
         2.4 Badge CSS
         2.5 Bookmark CSS
         2.6 Breadcrumb CSS
-        2.7 Basic-card CSS      
+        2.7 Basic-card CSS
         2.8 Buttons CSS
         2.9 Block-ui CSS
         2.10 Card CSS
@@ -33,7 +33,7 @@
         2.17 Forms CSS
         2.18 Icons CSS
         2.19 List CSS
-        2.20 Loader CSS  
+        2.20 Loader CSS
         2.21 Modal CSS
         2.22 Popover CSS
         2.23 Print CSS
@@ -62,7 +62,7 @@
         3.8 Comingsoon CSS
         3.9 Contacts CSS
         3.10 Dashboard_2 CSS
-        3.11 Dashboard_3 CSS 
+        3.11 Dashboard_3 CSS
         3.12 Dashboard_4 CSS
         3.13 Dashboard_5 CSS
         3.14 Dashboard_6 CSS
@@ -265,6 +265,7 @@
 /**=====================
     1.1 Reset CSS start
 ==========================**/
+
 .f-light {
   color: rgba(117, 117, 138, 0.8);
 }

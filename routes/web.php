@@ -22,5 +22,18 @@ Route::get('/login', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('admin.dashboard');
+
+    $user = User::find(1);
+
+    $data = [
+        'title' => 'Resume Page Application',
+        'name' => $user->name
+    ];
+    return view('admin.pages.dashcontent', $data);
+});
+
+Route::get('/about', function () {
+
+
+    return view('admin.pages.about');
 });

@@ -8,9 +8,7 @@
 <link rel="stylesheet" type="text/css" href="assets/admin/css/vendors/flag-icon.css">
 <!-- Feather icon-->
 <link rel="stylesheet" type="text/css" href="assets/admin/css/vendors/feather-icon.css">
-<!-- Plugins css start-->
-@stack('plugins')
-<!-- Plugins css Ends-->
+@stack('plugincss')
 <!-- Bootstrap css-->
 <link rel="stylesheet" type="text/css" href="assets/admin/css/vendors/bootstrap.css">
 <!-- App css-->
