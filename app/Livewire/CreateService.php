@@ -9,7 +9,7 @@ use Livewire\Component;
 class CreateService extends Component
 {
     #[Rule('required')]
-    public $service_icon;
+    public $service_icon = 'fa fa-code';
 
     #[Rule('required')]
     public $service_title;
@@ -21,12 +21,15 @@ class CreateService extends Component
         $this->reset();
     }
 
+
+
     public function save(){
         $validated = $this->validate();
         Service::create($validated);
         $this->dispatch('refresh');
         $this->reset();
     }
+    
     public function render()
     {
         return view('livewire.create-service');

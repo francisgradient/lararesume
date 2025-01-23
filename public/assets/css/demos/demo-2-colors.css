@@ -291,6 +291,9 @@
 		background: linear-gradient(135deg, rgba(255, 152, 0, 0.15) 0%, rgba(255, 152, 0, 0.01) 100%) !important;
 	}
 	.service-items .service-item .icon {
+		display: flex;
+    	justify-content: center; /* Centers horizontally */
+    	align-items: center;    /* Centers vertically */
 		color: #ff9800 !important;
 	}
 

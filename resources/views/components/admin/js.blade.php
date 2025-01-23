@@ -14,4 +14,3 @@
 <!-- Theme js-->
 <script src="assets/admin/js/script.js"></script>
 <script src="assets/admin/js/script1.js"></script>
-<script src="assets/admin/js/theme-customizer/customizer.js"></script>

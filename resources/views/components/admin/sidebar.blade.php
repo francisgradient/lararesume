@@ -1,7 +1,11 @@
 <!-- Page Sidebar Start-->
 <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
     <div>
-      <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="assets/admin/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="assets/admin/images/logo/logo_dark.png" alt=""></a>
+      <div class="logo-wrapper">
+        <a href="/dashboard">
+          <img class="img-fluid for-light" src="assets/admin/images/logo/logo.png" alt="">
+          <img class="img-fluid for-dark" src="assets/admin/images/logo/logo_dark.png" alt="">
+        </a>
         <div class="back-btn"><i class="fa-solid fa-angle-left"></i></div>
         <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
       </div>
@@ -24,7 +28,7 @@
               </div>
             </li>
             <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i>
-              <a class="sidebar-link sidebar-title" href="/dashboard">
+              <a class="sidebar-link sidebar-title link-nav" href="/dashboard">
                 <svg class="stroke-icon">
                   <use href="assets/admin/svg/icon-sprite.svg#stroke-home"></use>
                 </svg>

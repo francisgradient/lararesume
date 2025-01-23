@@ -6,6 +6,7 @@
 	<!--
 		Load CSS
 	-->
+	<link rel="stylesheet" type="text/css" href="assets/admin/css/fontawesome.css">
 	<link rel="stylesheet" href="assets/css/basic.css" />
 	<link rel="stylesheet" href="assets/css/layout.css" />
 	<link rel="stylesheet" href="assets/css/blogs.css" />
@@ -25,19 +26,9 @@
 	<link rel="stylesheet" href="assets/css/new-skin/new-skin.css" />
 
 	<!--
-		Template RTL
-	-->
-	<!--<link rel="stylesheet" href="assets/css/rtl-new.css" />-->
-
-	<!--
 		Template Colors
 	-->
 	<link rel="stylesheet" href="assets/css/demos/demo-2-colors.css" />
-	<!-- <link rel="stylesheet" href="assets/css/template-colors/blue.css" /> -->
-	<!--<link rel="stylesheet" href="assets/css/template-colors/orange.css" />-->
-	<!--<link rel="stylesheet" href="assets/css/template-colors/pink.css" />-->
-	<!--<link rel="stylesheet" href="assets/css/template-colors/purple.css" />-->
-	<!--<link rel="stylesheet" href="assets/css/template-colors/red.css" />-->
 
 	<!--
 		Template Dark

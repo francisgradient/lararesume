@@ -25,13 +25,13 @@ class EditService extends Component
         $this->reset();
     }
 
-    #[On('edit-mode')]
+    #[On('editmode')]
     public function edit($id){
-
         $this->data = Service::findOrfail($id);
         $this->service_icon = $this->data->service_icon;
         $this->service_title = $this->data->service_title;
         $this->service_description = $this->data->service_description;
+
 
     }
 
@@ -39,8 +39,6 @@ class EditService extends Component
         $validated = $this->validate();
         if ($this->data) {
             $this->data->update($validated);
-
-            // Emit an event to refresh the table
             $this->dispatch('refresh');
             $this->reset();
 
