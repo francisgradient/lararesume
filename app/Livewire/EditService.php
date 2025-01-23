@@ -27,6 +27,7 @@ class EditService extends Component
 
     #[On('edit-mode')]
     public function edit($id){
+
         $this->data = Service::findOrfail($id);
         $this->service_icon = $this->data->service_icon;
         $this->service_title = $this->data->service_title;

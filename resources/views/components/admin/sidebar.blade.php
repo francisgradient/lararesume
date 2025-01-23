@@ -46,7 +46,7 @@
                   <use href="assets/admin/svg/icon-sprite.svg#fill-landing-page"></use>
                 </svg><span>About</span></a>
               <ul class="sidebar-submenu">
-                <li><a href="/about">List</a></li>
+                <li><a href="/about">Services</a></li>
                 <li><a href="chart-widget.html">Chart</a></li>
               </ul>
             </li>

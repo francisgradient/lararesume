@@ -28,16 +28,16 @@
       <div class="page-title">
         <div class="row">
           <div class="col-sm-6">
-            <h3>Sample Page</h3>
+            <h3>About Section</h3>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">
+              <li class="breadcrumb-item"><a href="/dashboard">
                   <svg class="stroke-icon">
                     <use href="assets/admin/svg/icon-sprite.svg#stroke-home"></use>
                   </svg></a></li>
               <li class="breadcrumb-item">Pages</li>
-              <li class="breadcrumb-item active">Sample Page</li>
+              <li class="breadcrumb-item active">About Section</li>
             </ol>
           </div>
         </div>
